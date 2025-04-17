@@ -1,0 +1,15 @@
+.carpark-details-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  .carpark-details {
+    width: 80%; /* Optional: Limit the width of the content */
+    max-width: 1200px; /* Optional: Add a maximum width */
+    background-color: #fff; /* Optional: Add a background color */
+    padding: 20px; /* Optional: Add padding */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  }

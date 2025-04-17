@@ -1,0 +1,83 @@
+.bg {
+   background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjV5Y3hyN2J2OXhqZDBsMDV0eWt1OG54cDBpa2E0MzRnYzZ0OGx1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RfnQuPrBYOzpdh8yrh/giphy.gif");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: 50vw;
+   width: 75vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 1vw;
+ }
+
+
+ .MainBox {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for frosted effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+ .CancelHeader {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+
+ .CancelParas {
+  font-size: 16px;
+  color: black;
+  margin: 10px 0;
+ }
+ 
+ 
+ .error {
+  color: #d9534f;
+  background: #f8d7da;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+ }
+ 
+ 
+ .CancelButton {
+  background: #DA70D6;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  width: 100%;
+ }
+ 
+ 
+.CancelButton:hover {
+  background: #825b81;
+ }
+ 
+ 
+ .CancelButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+ }
