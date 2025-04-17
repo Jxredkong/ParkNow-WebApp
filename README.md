@@ -2,9 +2,9 @@
 
 Effortless parking, seamless experiences, every time.
 
-![Last Commit](https://img.shields.io/github/last-commit/Jxredkong/ParkNow)
-![Top Language](https://img.shields.io/github/languages/top/Jxredkong/ParkNow)
-![Languages Used](https://img.shields.io/github/languages/count/Jxredkong/ParkNow)
+![Last Commit](https://img.shields.io/github/last-commit/Jxredkong/ParkNow-WebApp)
+![Top Language](https://img.shields.io/github/languages/top/Jxredkong/ParkNow-WebApp)
+![Languages Used](https://img.shields.io/github/languages/count/Jxredkong/ParkNow-WebApp)
 
 ## Built With
 
