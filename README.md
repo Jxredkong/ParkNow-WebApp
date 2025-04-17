@@ -1,158 +1,92 @@
-# ParkNow App
+# PARKNOW <a name="top"></a>
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Effortless parking, seamless experiences, every time.
 
-## Contents
+![Last Commit](https://img.shields.io/github/last-commit/Jxredkong/ParkNow)
+![Top Language](https://img.shields.io/github/languages/top/Jxredkong/ParkNow)
+![Languages Used](https://img.shields.io/github/languages/count/Jxredkong/ParkNow)
 
-1.  [Purpose](#purpose)
-2.  [Expected Audience](#expected-audience)
-3.  [Novelty](#novelty)
-4.  [Key Features and Functionalities](#key-features-and-functionalities)
-5.  [Setup Instructions](#setup-instructions)
-6.  [APIs Used](#apis-used)
-7.  [System Design Patterns/Principles Used](#system-design-patterns-principles-used)
+## Built With
 
-## 1. Purpose <a name="purpose"></a>
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=flat&logo=yarn&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
 
-ParkNow is a mobile-first web application designed to simplify the process of finding and booking available parking spaces in Singapore. It aims to provide users with real-time carpark availability information and a seamless booking experience, reducing the stress and time associated with parking.
+## APIs
 
-## 2. Expected Audience <a name="expected-audience"></a>
+1. Data.gov.sg:<br>
+   i. Carpark Availability API: Provides real-time carpark availability<br>
+   ii. Carpark Information API: Supplies detailed carpark information<br>
 
-The primary audience for ParkNow includes:
 
-* Drivers in Singapore seeking convenient parking options.
-* Residents and visitors needing short-term or pre-booked parking.
-* Individuals who value efficiency and want to avoid the hassle of searching for parking.
+## Table of Contents
 
-## 3. Novelty <a name="novelty"></a>
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
 
-ParkNow aims to stand out by:
+## Overview
 
-* Providing a user-friendly and intuitive interface focused on speed and efficiency.
-* Integrating real-time availability data with a direct booking system.
-* Potentially incorporating smart features like personalized parking recommendations based on user history and location (future enhancement).
+ParkNow is designed to simplify carpark management, offering a seamless booking experience with real-time data access.
 
-## 4. Key Features and Functionalities <a name="key-features-and-functionalities"></a>
+### Why ParkNow?
 
-* **Real-time Carpark Availability:** Displays up-to-the-minute real time parking lot availability across Singapore.
-* **Carpark Browsing:** Allows users to browse carparks by location, rates, of interest.
-* **Booking System:** Enables users to select a carpark, date, and time to book a parking slot.
-* **User Authentication:** Secure registration and login with HTTPS encrypted passwords.
-* **Cancellation Feature:** Ability to cancel bookings within a defined timeframe.
+- 🚀**Responsive Design** – Adapts seamlessly to various devices, ensuring accessibility for all users.
+- 📊**Real-time Data Access** – Fetches up-to-date carpark availability and location information for informed decision-making.
+- 🔒**Streamlined Authentication** – Integrates Supabase for secure user login and registration, simplifying user management.
+- 🎨**Modern Styling with Tailwind CSS** – Utilizes a utility-first CSS framework for rapid UI development and consistent design.
+- 📆**Comprehensive Booking Management** – Facilitates booking, check-in, and cancellation processes, enhancing user interaction.
 
-## 5. Setup Instructions <a name="setup-instructions"></a>
+## Getting Started
 
-## Prerequisites
-1. Ensure you have **Node.js** installed on your system. You can download it from [Node.js Official Website](https://nodejs.org/).
-2. Install a package manager like **npm** (comes with Node.js) or **yarn**.
+To set up ParkNow, follow these steps:
 
-## Steps to Set Up the Project
+### Prerequisites
 
-1. **Clone the Repository**
+Ensure you have the following installed before proceeding:
+
+- **JavaScript** – Core programming language.
+- **Package Manager** – Either [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/).
+
+### Installation
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/huegashi/ParkNow.git
-   cd my-app
-   ```
+   git clone https://github.com/Jxredkong/ParkNow
 
-2. **Install Dependencies**
-   Run the following command to install all required dependencies:
+2. Navigate to the project directory:
+   ```bash
+   cd ParkNow
+
+3. Install dependencies:
+
+Using **npm**
    ```bash
    npm install
    ```
-
-3. **Environment Setup**
-   - Ensure you have access to the required APIs:
-     - `https://api.data.gov.sg/v1/transport/carpark-availability`
-     - `https://data.gov.sg/api/action/datastore_search`
-
-4. **Run the Application**
-   Start the development server:
+Using **yarn**
    ```bash
-   npm start
+   yarn install
    ```
 
-5. **Testing the Application**
-   - Open your browser and navigate to `http://localhost:3000` (or the port specified in your project).
-   - Verify that carpark data is fetched and displayed correctly.
+### Usage
 
-6. **Debugging**
-   - Debug logs are available in the browser console for:
-     - Fetched carpark availability data.
-     - Raw and parsed carpark data.
-   - Check for any errors in the console if the application does not behave as expected.
+Run the project with:
 
-7. **Build for Production**
-   To create a production build, run:
+Using **npm**
    ```bash
-   npm run build
+   npm run dev
+   ```
+Using **yarn**
+   ```bash
+   yarn start
    ```
 
-8. **Optional: Run Tests**
-   If tests are available, you can run them using:
-   ```bash
-   npm test
-   ```
-
-## Notes
-- Ensure your browser allows access to the APIs mentioned above.
-- If you encounter issues with localStorage, clear your browser's localStorage and try again.
-
-
-8.  **Access the application:** Open your web browser and navigate to the address where the frontend is served (usually `http://localhost:3000`).
-
-## 6. APIs Used <a name="apis-used"></a>
-
-* **Supabase:** For user authentication and registration.
-* **Data.gov.sg APIs:** Carpark Availability API and Carpark Information.
-
-## 7. System Design Patterns/Principles Used <a name="system-design-patterns-principles-used"></a>
-### Modularity
-
-The application exhibits high modularity by separating concerns into distinct components and controllers. Each function within the 3-layered architecture (Presentation: CSS + UIs, Logic: controllers, Persistent Data) handles specific tasks. For instance, the `Authenticator` manages authentication, while `CheckInController`, `CheckOutController`, and `BrowseCarparkController` handle their respective functionalities. Views like `Home` and `CarparkDetails` are kept separate from the underlying controller logic.
-
-This design choice ensures:
-
-* **Easy feature addition:** New functionalities can be added as independent modules.
-* **Reduced regression risk:** Decoupled components minimize the likelihood of changes causing unintended side effects.
-* **Parallel development:** Different parts of the application can be worked on concurrently.
-* **Maintainability:** Each module can be developed, tested, and maintained in isolation.
-
-### Abstraction
-
-The use of React components abstracts away the complexities of UI rendering. Examples include:
-
-* `<Authenticator />`: Abstracts user authentication logic.
-* `<BrowseCarparkController />`: Abstracts the logic for browsing car parks.
-* `react-router-dom`: Abstracts navigation logic, allowing developers to focus on route definitions.
-
-This abstraction provides:
-
-* **Flexibility:** Underlying technologies can be changed without affecting the application's core structure.
-* **Improved readability and simplicity:** Makes the codebase easier to understand and simplifies future development efforts.
-
-### Open-Closed Principle
-
-The application adheres to the Open-Closed Principle, being open for extension but closed for modification.
-
-* New routes (e.g., `/browse-carpark`) can be added without altering existing route configurations.
-* New controllers or views can be introduced without modifying existing ones, provided they adhere to established interfaces.
-
-The addition of `BrowseCarparkController` as a new route, for example, did not necessitate changes to other existing controllers or views. This principle allows for:
-
-* **Addition of features without modification:** Minimizing the risk of introducing bugs into stable code.
-* **Future-proofing:** The application can adapt to new requirements and integrate new technologies as independent modules without major rewrites.
-
-### Reusability
-
-Components and controllers are designed for reuse across the application.
-
-* The `Navigation Menu` is utilized in various parts and pages.
-* Controllers like `BookingController` and `CancelBookingController` encapsulate specific business logic, making them reusable across different views and routes.
-* The routing system (`react-router-dom`) itself is reusable, centralizing navigation logic within `App.jsx`.
-
-This promotes:
-
-* **Faster future development:** By leveraging existing, tested components and logic.
-* **Consistent behavior and UI:** Ensuring a uniform user experience throughout the application.
-* **Reduced code duplication:** Leading to a more manageable and maintainable codebase.
-
+[Return](#top)
